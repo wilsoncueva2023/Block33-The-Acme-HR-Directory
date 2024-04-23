@@ -1,0 +1,23 @@
+{
+  "name": "block33-the-acme-hr-directory",
+  "version": "1.0.0",
+  "description": "Testing API endpoints",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wilsoncueva2023/Block33-The-Acme-HR-Directory.git"
+  },
+  "author": "Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilsoncueva2023/Block33-The-Acme-HR-Directory/issues"
+  },
+  "homepage": "https://github.com/wilsoncueva2023/Block33-The-Acme-HR-Directory#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  }
+}
