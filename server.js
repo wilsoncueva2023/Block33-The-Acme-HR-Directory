@@ -21,6 +21,15 @@ client.connect();
 app.use(bodyParser.json());
 app.use(morgan('dev')); // Using Morgan for logging in 'dev' format
 
+app.get('/api/employees', async (req, res) => {
+    try {
+        const result = await client.query('SELECT * FROM employees');
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
 
 
 app.listen(port, () => {
